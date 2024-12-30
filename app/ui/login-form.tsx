@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 "use client";
 
 import { lusitana } from "@/app/ui/fonts";
+=======
+import { lusitana } from '@/app/ui/fonts';
+>>>>>>> 0e06572e51167caf3662a61b2e874cf186dd3e50
 import {
   AtSymbolIcon,
   KeyIcon,
   ExclamationCircleIcon,
+<<<<<<< HEAD
 } from "@heroicons/react/24/outline";
 import { ArrowRightIcon } from "@heroicons/react/20/solid";
 import { Button } from "./button";
@@ -18,6 +23,15 @@ export default function LoginForm() {
   );
   return (
     <form action={formAction} className="space-y-3">
+=======
+} from '@heroicons/react/24/outline';
+import { ArrowRightIcon } from '@heroicons/react/20/solid';
+import { Button } from './button';
+
+export default function LoginForm() {
+  return (
+    <form className="space-y-3">
+>>>>>>> 0e06572e51167caf3662a61b2e874cf186dd3e50
       <div className="flex-1 rounded-lg bg-gray-50 px-6 pb-4 pt-8">
         <h1 className={`${lusitana.className} mb-3 text-2xl`}>
           Please log in to continue.
@@ -63,6 +77,7 @@ export default function LoginForm() {
             </div>
           </div>
         </div>
+<<<<<<< HEAD
         <Button className="mt-4 w-full" aria-disabled={isPending}>
           Log in <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
         </Button>
@@ -77,6 +92,12 @@ export default function LoginForm() {
               <p className="text-sm text-red-500">{errorMessage}</p>
             </>
           )}
+=======
+        <Button className="mt-4 w-full">
+          Log in <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
+        </Button>
+        <div className="flex h-8 items-end space-x-1">
+>>>>>>> 0e06572e51167caf3662a61b2e874cf186dd3e50
           {/* Add form errors here */}
         </div>
       </div>

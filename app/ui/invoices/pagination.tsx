@@ -4,11 +4,15 @@ import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
 import clsx from 'clsx';
 import Link from 'next/link';
 import { generatePagination } from '@/app/lib/utils';
+<<<<<<< HEAD
 import { usePathname, useSearchParams } from 'next/navigation';
+=======
+>>>>>>> 0e06572e51167caf3662a61b2e874cf186dd3e50
 
 export default function Pagination({ totalPages }: { totalPages: number }) {
   // NOTE: Uncomment this code in Chapter 11
 
+<<<<<<< HEAD
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const currentPage = Number(searchParams.get('page')) || 1;
@@ -19,11 +23,19 @@ export default function Pagination({ totalPages }: { totalPages: number }) {
     params.set('page', pageNumber.toString());
     return `${pathname}?${params.toString()}`;
   };
+=======
+  // const allPages = generatePagination(currentPage, totalPages);
+
+>>>>>>> 0e06572e51167caf3662a61b2e874cf186dd3e50
   return (
     <>
       {/*  NOTE: Uncomment this code in Chapter 11 */}
 
+<<<<<<< HEAD
       <div className="inline-flex">
+=======
+      {/* <div className="inline-flex">
+>>>>>>> 0e06572e51167caf3662a61b2e874cf186dd3e50
         <PaginationArrow
           direction="left"
           href={createPageURL(currentPage - 1)}
@@ -56,7 +68,11 @@ export default function Pagination({ totalPages }: { totalPages: number }) {
           href={createPageURL(currentPage + 1)}
           isDisabled={currentPage >= totalPages}
         />
+<<<<<<< HEAD
       </div>
+=======
+      </div> */}
+>>>>>>> 0e06572e51167caf3662a61b2e874cf186dd3e50
     </>
   );
 }

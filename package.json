@@ -12,8 +12,13 @@
     "autoprefixer": "10.4.20",
     "bcrypt": "^5.1.1",
     "clsx": "^2.1.1",
+<<<<<<< HEAD
     "next": "15.1.1-canary.21",
     "next-auth": "5.0.0-beta.25",
+=======
+    "next": "latest",
+    "next-auth": "5.0.0-beta.19",
+>>>>>>> 0e06572e51167caf3662a61b2e874cf186dd3e50
     "postcss": "8.4.49",
     "react": "19.0.0",
     "react-dom": "19.0.0",
